@@ -13,7 +13,11 @@ class Solution {
         }
         if(temp<0){
             rev=rev*(-1);
-        }
+        }        
+        if(rev > Integer.MAX_VALUE || rev<Integer.MIN_VALUE){
+            return 0;
+        }else{
         return (int)rev;
+        }
     }
 }
