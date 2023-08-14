@@ -3,7 +3,6 @@ class Solution {
         quickSort(nums,0,nums.length-1);
         return nums[nums.length-k];
     }
-    
     public void quickSort(int arr[],int left,int right){
         if(left<right){
             int pivot=partition(arr,left,right);
